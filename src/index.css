@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.pass-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#b8babb,#88311c9d,#8ccede);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pass-card{
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.09);
+  width: 100%;
+  max-width: 400px;
+}
+.pass-tittle{
+  margin: 0 0 6px 0;
+  font-size: 25px;
+  color: #1a1a1a;
+  text-shadow: 0 4px 10px rgb(117, 213, 233);
+}
+.pass-subtitle{
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.pass-input-wrapper{
+ 
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.pass-input{
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+}
+.pass-show-btn{
+  padding: 0 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  color: #374151;
+}
+.pass-show-btn:hover{
+  background-color: #e5e7eb;
+}
+.pass-strength-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.pass-level-text{
+  text-transform: capitalize;
+  color: #6b7280;
+}
+.pass-progress-bg{
+  height: 9px;
+ width: 100%;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.pass-progress-fill{
+  background-color: rgb(0, 255, 4);
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease,background-color 0.3s ease;
+}
+.pass-tip-box{
+  background-color: #f9fafb;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #4b5563;
+  margin-bottom: 16px;
+  border-left: 4px solid #cbd5e1;
+}
+.pass-checklist{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+.pass-checklist li{
+  margin-bottom: 6px;
+  color: #ef4444;
+}
+@media(max-width:480px){
+  .pass-container{
+    padding: 15px;
+  }
+  .pass-card{
+    padding: 20px;
+  }
+  .pass-tittle{
+    font-size: 22px;
+  }
+}
